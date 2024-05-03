@@ -1,23 +1,36 @@
-body, h1, h2, h3, h4, h5, h6, .cursive {
-    font-family: "Montserrat", cursive;
-    color: green;
-}
+/* Custom CSS for Versatile Operations website */
 
-.navbar-nav .nav-link {
-    font-family: cursive;
-    color: green !important;
-}
-
+/* General Styles */
 body {
-    background-color: lightcream;
+    background-color: #111; /* Light black background */
+    font-family: "Montserrat", sans-serif;
+    color: red; /* Set text color to red */
 }
 
 .center-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
+/* Navigation Bar Styles */
+.navbar-brand {
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Pink Section Styles */
 .pink-section {
-    background-color: #ffcccc; /* light red or dark pink */
+    background-color: #ffcccc; /* Light red background */
+}
+
+/* Cursive and Green Text Styles */
+.cursive {
+    font-style: italic;
+}
+
+.green {
+    color: green;
 }
