@@ -1,0 +1,13 @@
+body, h1, h2, h3, h4, h5, h6, .cursive {
+    font-family: "Montserrat", cursive;
+    color: green;
+}
+
+.navbar-nav .nav-link {
+    font-family: cursive;
+    color: green !important;
+}
+
+body {
+    background-color: black;
+}
