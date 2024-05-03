@@ -4,38 +4,13 @@
     <title>Versatile Operations</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
           crossorigin="anonymous">
-    <style>
-        body, h1, h2, h3, h4, h5, h6, .cursive {
-            font-family: "Montserrat", cursive;
-            color: green;
-        }
-
-        .navbar-nav .nav-link {
-            font-family: cursive;
-            color: green !important;
-        }
-
-        body {
-            background-color: lightcream;
-        }
-
-        .center-img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .pink-section {
-            background-color: #ffcccc; /* light red or dark pink */
-        }
-    </style>
 </head>
 <body>
 
@@ -66,7 +41,9 @@
                     MUSIC
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#music">Download Music</a></li>
+                    <li><a class="dropdown-item cursive green" href="#music">Download Music</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item cursive green" href="#fashion">Fashion</a></li>
                 </ul>
             </li>
             <li class="nav-item">
@@ -98,70 +75,16 @@
     <div class="w3-content w3-justify w3-text-grey w3-padding-64 pink-section" id="hoodies">
         <h2 class="w3-text-light-grey cursive">Hoodies</h2>
         <hr style="width:200px" class="w3-opacity">
-        <p>This section will display all the recent hoodies and then range from most popular hoodies to least.</p>
-    </div>
-
-    <!-- T-shirts Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64 pink-section" id="tshirts">
-        <h2 class="w3-text-light-grey cursive">T-shirts</h2>
-        <hr style="width:200px" class="w3-opacity">
-        <p>This section will display all the recent T-shirts and then range from most popular T-shirts to least.</p>
-    </div>
-
-    <!-- Pants Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64 pink-section" id="pants">
-        <h2 class="w3-text-light-grey cursive">Pants</h2>
-        <hr style="width:200px" class="w3-opacity">
-        <p>This section will display all the recent pants and then range from most popular pants to least.</p>
-    </div>
-
-    <!-- Music Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64 pink-section" id="music">
-        <h2 class="w3-text-light-grey cursive">Download Music</h2>
-        <hr style="width:200px" class="w3-opacity">
         <div class="card">
-            <img src="C:\Users\17323\Desktop\Image\IMG_5940.jpg" class="card-img-top" alt="Music">
+            <img src="C:\Users\17323\Desktop\Image\IMG_9806.jpg" class="card-img-top" alt="Hoodie">
             <div class="card-body">
-                <h5 class="card-title">Download Music</h5>
-                <p class="card-text">Download the latest tracks from Versatile Operations.</p>
-                <a href="#" class="btn btn-primary">Download</a>
+                <h5 class="card-title">Hoodie Name</h5>
+                <p class="card-text">Description of the hoodie.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
             </div>
         </div>
     </div>
 
-    <!-- Contact Section -->
-    <div class="w3-padding-64 w3-content w3-text-grey pink-section" id="contact">
-        <h2 class="w3-text-light-grey cursive">Contact Operations</h2>
-        <hr style="width:200px" class="w3-opacity">
-        <div class="w3-section">
-            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Sayreville, US</p>
-            <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1800-215-6608</p>
-            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: mail@mail.com</p>
-        </div><br>
-        <p>Let's get in touch. Send me a message:</p>
-
-        <form action="/action_page.php" target="_blank">
-            <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-            <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-            <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-            <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-            <p>
-                <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                </button>
-            </p>
-        </form>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; Copyright Oseghale Kelly Akhimien 2024</p>
-    </footer>
-</div>
-
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-mMdT/EWXPR5XD1w5f3nMcrddxyk4lK/3f5qz9s9TKKO0tjBSsPsbPZFDlegx1jG7"
-        crossorigin="anonymous"></script>
-</body>
-</html>
+    <!-- T-shirts Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64 pink-section" id="tshirts">
+        <h2 class="w3-text-light
