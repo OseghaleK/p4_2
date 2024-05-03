@@ -9,5 +9,15 @@ body, h1, h2, h3, h4, h5, h6, .cursive {
 }
 
 body {
-    background-color: black;
+    background-color: lightcream;
+}
+
+.center-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pink-section {
+    background-color: #ffcccc; /* light red or dark pink */
 }
