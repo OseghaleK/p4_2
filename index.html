@@ -23,7 +23,17 @@
         }
 
         body {
-            background-color: black;
+            background-color: lightcream;
+        }
+
+        .center-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pink-section {
+            background-color: #ffcccc; /* light red or dark pink */
         }
     </style>
 </head>
@@ -51,8 +61,13 @@
             <li class="nav-item">
                 <a class="nav-link cursive green" href="#pants">PANTS</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link cursive green" href="#music-fashion">MUSIC/FASHION</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle cursive green" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    MUSIC
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#music">Download Music</a></li>
+                </ul>
             </li>
             <li class="nav-item">
                 <a class="nav-link cursive green" href="#contact">CONTACT</a>
@@ -65,79 +80,83 @@
 <div class="w3-padding-large" id="main">
     <!-- Header/Home -->
     <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <div class="center-img">
+            <img src="C:\Users\17323\Desktop\Image\IMG_5922.jpg" alt="Versatile Operations logo" class="w3-image" width="400">
+        </div>
         <h1 class="w3-jumbo"><span class="w3-hide-small">Versatile</span> Operations.</h1>
         <p>Fashion Apparel Brand.</p>
     </header>
 
     <!-- About Founders Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64 pink-section" id="about">
         <h2 class="w3-text-light-grey cursive">About the Founders</h2>
         <hr style="width:200px" class="w3-opacity">
         <p>Information about how the Versatile Operations apparel company got started and personal information about the 2 founders.</p>
     </div>
 
     <!-- Hoodies Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="hoodies">
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64 pink-section" id="hoodies">
         <h2 class="w3-text-light-grey cursive">Hoodies</h2>
         <hr style="width:200px" class="w3-opacity">
         <p>This section will display all the recent hoodies and then range from most popular hoodies to least.</p>
     </div>
 
     <!-- T-shirts Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="tshirts">
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64 pink-section" id="tshirts">
         <h2 class="w3-text-light-grey cursive">T-shirts</h2>
         <hr style="width:200px" class="w3-opacity">
         <p>This section will display all the recent T-shirts and then range from most popular T-shirts to least.</p>
     </div>
 
     <!-- Pants Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="pants">
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64 pink-section" id="pants">
         <h2 class="w3-text-light-grey cursive">Pants</h2>
         <hr style="width:200px" class="w3-opacity">
         <p>This section will display all the recent pants and then range from most popular pants to least.</p>
     </div>
 
-    <!-- Music/Fashion Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="music-fashion">
-        <h2 class="w3-text-light-grey cursive">Music/Fashion</h2>
+    <!-- Music Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64 pink-section" id="music">
+        <h2 class="w3-text-light-grey cursive">Download Music</h2>
         <hr style="width:200px" class="w3-opacity">
-        <p>This fashion page will show different styles the apparel can be worn by models, and also music in the background while scrolling through the page.</p>
+        <div class="card">
+            <img src="C:\Users\17323\Desktop\Image\IMG_5940.jpg" class="card-img-top" alt="Music">
+            <div class="card-body">
+                <h5 class="card-title">Download Music</h5>
+                <p class="card-text">Download the latest tracks from Versatile Operations.</p>
+                <a href="#" class="btn btn-primary">Download</a>
+            </div>
+        </div>
     </div>
 
     <!-- Contact Section -->
-    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <div class="w3-padding-64 w3-content w3-text-grey pink-section" id="contact">
         <h2 class="w3-text-light-grey cursive">Contact Operations</h2>
         <hr style="width:200px" class="w3-opacity">
-
         <div class="w3-section">
-            <p><i class="fa fa-map-marker fa-fw w3-text-green w3-xxlarge w3-margin-right"></i> Sayreville, US</p>
-            <p><i class="fa fa-phone fa-fw w3-text-green w3-xxlarge w3-margin-right"></i> Phone: +1800-215-6608 </p>
-            <p><i class="fa fa-envelope fa-fw w3-text-green w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Sayreville, US</p>
+            <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1800-215-6608</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: mail@mail.com</p>
         </div><br>
-        <p class="cursive">Let's get in touch. Send me a message:</p>
+        <p>Let's get in touch. Send me a message:</p>
 
         <form action="/action_page.php" target="_blank">
-            <div class="card">
-                <img src="C:\Users\17323\Downloads\IMG_9807.jpg" class="card-img-top" alt="Versatile Operations">
-                <div class="card-body">
-                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-                    <p>
-                        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                        </button>
-                    </p>
-                </div>
-            </div>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+            <p>
+                <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </p>
         </form>
     </div>
 
     <!-- Footer -->
-    <div class="footer">
+    <footer class="footer">
         <p>&copy; Copyright Oseghale Kelly Akhimien 2024</p>
-    </div>
+    </footer>
 </div>
 
 <!-- JavaScript Bundle with Popper -->
